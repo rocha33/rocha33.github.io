@@ -1,8 +1,7 @@
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
-     return cache.addAll([   
-       'rocha33.github.io/',	 
+     return cache.addAll([         	 
        'rocha33.github.io/index.html',
        'rocha33.github.io/index.js',
        'rocha33.github.io/style.css',
