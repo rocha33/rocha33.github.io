@@ -6,10 +6,7 @@ function randomValueFromArray(array) {
   return array[randomNo];
 }
 
-setInterval(function() {
-  let randomChoice = randomValueFromArray(images);
-  imgElem.src = 'images/' + randomChoice + '.jpg';
-}, 2000)
+
 
 // Register service worker to control making site work offline
 
@@ -18,6 +15,10 @@ if('serviceWorker' in navigator) {
            .register('sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
+setInterval(function() {
+  let randomChoice = randomValueFromArray(images);
+  imgElem.src = 'images/' + randomChoice + '.jpg';
+}, 2000)
 
 // Code to handle install prompt on desktop
 
