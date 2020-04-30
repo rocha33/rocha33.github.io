@@ -15,7 +15,7 @@ setInterval(function() {
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('rocha33.github.io/sw.js')
+           .register('sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
 
